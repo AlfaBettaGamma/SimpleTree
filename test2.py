@@ -1,0 +1,122 @@
+from test import SimpleTree, SimpleTreeNode
+
+class my_test:
+	def test1(self):
+		A1 = SimpleTreeNode(9, None)
+		A2 = SimpleTreeNode(17, None)
+		A3 = SimpleTreeNode(22, None)
+		A4 = SimpleTreeNode(20, None)
+		A5 = SimpleTreeNode(4, None)
+		A6 = SimpleTreeNode(3, None)
+		A7 = SimpleTreeNode(6, None)
+		A8 = SimpleTreeNode(5, None)
+		A9 = SimpleTreeNode(7, None)
+
+		tree = SimpleTree(A1)
+		tree.AddChild(A1, A2)
+		tree.AddChild(A2, A3)
+		tree.AddChild(A3, A4)
+		tree.AddChild(A1, A5)
+		tree.AddChild(A5, A6)
+		tree.AddChild(A5, A7)
+		tree.AddChild(A6, A8)
+		tree.AddChild(A6, A9)
+
+		print(tree.Count())
+		print(tree.LeafCount())
+		tree.Print_all_Nodes()
+	def test2(self):
+		A1 = SimpleTreeNode(9, None)
+		A2 = SimpleTreeNode(17, None)
+		A3 = SimpleTreeNode(22, None)
+		A4 = SimpleTreeNode(20, None)
+		A5 = SimpleTreeNode(4, None)
+		A6 = SimpleTreeNode(3, None)
+		A7 = SimpleTreeNode(6, None)
+		A8 = SimpleTreeNode(5, None)
+		A9 = SimpleTreeNode(7, None)
+
+		tree = SimpleTree(A1)
+		tree.AddChild(A1, A2)
+		tree.AddChild(A2, A3)
+		tree.AddChild(A3, A4)
+		tree.AddChild(A1, A5)
+		tree.AddChild(A5, A6)
+		tree.AddChild(A5, A7)
+		tree.AddChild(A6, A8)
+		tree.AddChild(A6, A9)
+
+		print(tree.Count())
+		print(tree.LeafCount())
+		tree.Print_all_Nodes()
+
+		A10 = SimpleTreeNode(99, None)
+		tree.AddChild(A3, A10)
+
+		print(tree.Count())
+		print(tree.LeafCount())
+		tree.Print_all_Nodes()
+	def test3(self):
+		A1 = SimpleTreeNode(9, None)
+		A2 = SimpleTreeNode(17, None)
+		A3 = SimpleTreeNode(22, None)
+		A4 = SimpleTreeNode(20, None)
+		A5 = SimpleTreeNode(4, None)
+		A6 = SimpleTreeNode(3, None)
+		A7 = SimpleTreeNode(6, None)
+		A8 = SimpleTreeNode(5, None)
+		A9 = SimpleTreeNode(7, None)
+
+		tree = SimpleTree(A1)
+		tree.AddChild(A1, A2)
+		tree.AddChild(A2, A3)
+		tree.AddChild(A3, A4)
+		tree.AddChild(A1, A5)
+		tree.AddChild(A5, A6)
+		tree.AddChild(A5, A7)
+		tree.AddChild(A6, A8)
+		tree.AddChild(A6, A9)
+
+		print(tree.Count())
+		print(tree.LeafCount())
+		tree.Print_all_Nodes()
+
+		tree.DeleteNode(A6)
+		print(tree.Count())
+		print(tree.LeafCount())
+		tree.Print_all_Nodes()
+
+	def test4(self):
+		A1 = SimpleTreeNode(9, None)
+		A2 = SimpleTreeNode(17, None)
+		A3 = SimpleTreeNode(22, None)
+		A4 = SimpleTreeNode(20, None)
+		A5 = SimpleTreeNode(4, None)
+		A6 = SimpleTreeNode(3, None)
+		A7 = SimpleTreeNode(6, None)
+		A8 = SimpleTreeNode(5, None)
+		A9 = SimpleTreeNode(7, None)
+
+		tree = SimpleTree(A1)
+		tree.AddChild(A1, A2)
+		tree.AddChild(A2, A3)
+		tree.AddChild(A3, A4)
+		tree.AddChild(A1, A5)
+		tree.AddChild(A5, A6)
+		tree.AddChild(A5, A7)
+		tree.AddChild(A6, A8)
+		tree.AddChild(A6, A9)
+
+		print(tree.Count())
+		print(tree.LeafCount())
+		tree.Print_all_Nodes()
+
+		tree.DeleteNode(A11)
+		print(tree.Count())
+		print(tree.LeafCount())
+		tree.Print_all_Nodes()
+
+
+
+test = my_test()
+test.test3()
